@@ -1,0 +1,38 @@
+.contact-panel {
+    position: relative;
+    padding: 2.1818em;
+    border-radius: .3636em;
+    background-color: var(--clr-neutral-400);
+
+    & > h2 { margin-bottom: 2rem; }
+
+    & > p { 
+        margin-bottom: 2.25rem; 
+        letter-spacing: 0.02em;
+    }   
+
+    & > .socials--md { 
+        position: absolute;
+        left: 3rem;
+        bottom: 2rem;
+    }
+}
+
+.contact-phone::before {
+    content: url('/images/phone.svg'); 
+}
+.contact-email::before {
+    content: url('/images/email.svg')
+}
+.contact-location::before {
+    content: url('/images/location.svg')
+}
+
+.contact-phone::before,
+.contact-email::before,
+.contact-location::before {
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+    top: 9px;
+}

@@ -1,0 +1,17 @@
+.checkmark-list {
+    
+    li {
+        position: relative;
+        margin-left: 4rem;
+        padding-bottom: 1rem;
+        max-width: 82%;
+    }
+
+    li::before {
+        content: url('/images/check-circle.svg');
+        position: absolute;
+        left: -3rem;
+        top: 1.5px;
+    }
+    
+}

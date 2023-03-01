@@ -1,0 +1,28 @@
+.testimonial {
+    border-radius: 8px; 
+    padding: 1.818em 1.4545em;
+    max-width: 24em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: var(--fw-medium);
+}
+
+.testimonial__info {
+    margin-left: 1rem;
+
+    & > h3 {
+        font-weight: var(--fw-bold);
+    }
+}
+
+.testimonial__img {
+    border-radius: 100vh;
+    max-width: 104px;
+    max-height: 104px;
+}
+
+.testimonial__text {
+    flex: 0 1 100%;
+    margin-top: 1.5rem;
+}

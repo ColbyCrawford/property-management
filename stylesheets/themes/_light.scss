@@ -1,0 +1,59 @@
+body.light {
+
+    .theme-toggle--default {
+        border-color: var(--clr-primary-400);
+        &::before { content: url('/images/sun.svg'); }
+        &::after { background-color: var(--clr-primary-400); }
+    }
+
+    .theme-toggle--inverse {
+        border-color: var(--clr-neutral-200);
+
+        &::before { content: url('/images/sun--inverse.svg'); }
+
+        &::after {
+            background-color: var(--clr-neutral-200);
+        }
+    }
+
+    .main-nav { color: var(--clr-primary-400); }
+    .main-nav--inverse { color: var(--clr-neutral-200); }
+
+    .fa-bars { color: var(--clr-primary-400); }
+
+    #site-hero {
+    background-color: var(--clr-neutral-200);
+    background-image: url('/images/vert-line.svg'), 
+                      url('/images/horiz-line.svg'),
+                      url('/images/horiz-line.svg');
+    }
+
+    #home-main {
+        background-color: var(--clr-neutral-300);
+    }
+
+    .site-footer {
+        background-color: var(--clr-primary-600);
+        color: var(--clr-neutral-200);
+    }
+
+    .cta-section {
+        color: var(--clr-neutral-200);
+    }
+
+    .text-block__svg {
+        color: #BAC0C5;
+    }
+
+    .testimonial {
+        background-color: var(--clr-neutral-300);
+        border-top: 4px solid var(--clr-accent-400);
+        box-shadow: 2px 3px 34px rgba(81, 91, 101, 0.23);
+    }
+
+    .page-header::after { background-color: var(--clr-primary-400); }
+    #contact-header::after { background-color: var(--clr-neutral-400); }
+
+    .page-header__text-inverse { color: var(--clr-neutral-200); }
+
+}

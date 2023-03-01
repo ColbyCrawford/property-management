@@ -1,0 +1,10 @@
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials--md {
+    @extend .socials;
+
+    img { min-width: 2rem; }
+}

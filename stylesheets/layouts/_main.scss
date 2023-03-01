@@ -1,0 +1,200 @@
+/**************************/
+/**        Homepage      **/
+/**************************/
+
+/* ABOUT SECTION */
+
+.about-section { 
+    margin-bottom: 8rem; 
+}
+
+.about-section h2 {
+    text-align: center;
+    max-width: 17em;
+    margin: 0 auto 5rem;
+}
+
+.about-steps {
+    padding-bottom: 2em;
+    @media (min-width: 57em) {
+        gap: 4rem;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.about-info {
+    gap: 2rem;
+    align-items: center;
+
+    & > img { 
+        display: block;
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+
+    @media (min-width: 57em) {
+        & > :first-child { flex: 0 1 50%; }
+        & > img { flex: 0 1 40%; }
+    }
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+    @media (min-width: 57em) {
+        padding-block: 3em 4em;
+    }
+
+    & h2 { max-width: 14em; }
+}
+
+.services-content {
+    margin-top: 4.5rem;
+    position: relative;
+}
+
+.services-content__text {
+    flex: 0 1 65%;
+
+    & > .l-flex { gap: 2rem; }
+
+    & > .l-flex:last-child { margin-top: 2rem; }
+}
+
+.services-content__img {
+    position: relative;
+    width: 90%;
+    right: -4em;
+    margin-top: 1rem;
+    @media (min-width: 57rem) {
+        position: absolute;
+        top: -11em;
+        right: -19em;
+        width: 60%;
+        min-width: 30em;
+    }
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+    margin-block: 5rem 12rem;
+    
+}
+
+.testimonials-container {
+    & > h2 {
+        text-align: center;
+    }
+
+   & > .btn--primary {
+    position: relative;
+    left: 50%;
+    top: 4em;
+    transform: translateX(-50%);
+   }
+}
+
+.testimonials {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/* CTA SECTION */
+.cta-section {
+    position: relative;
+    padding-block: 2.9em;
+    background-image: url('/images/bg-cta.jpeg');
+    background-size: cover;
+    background-position: center center;
+    isolation: isolate;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-primary-400);
+    opacity: 90%;
+    z-index: -1;
+}
+
+.cta-content {
+    max-width: 31em;
+    text-align: center;
+    margin: 0 auto;
+
+    & > p { margin-block: 1.5rem 2rem; }
+
+}
+
+/**************************/
+/**      About Page      **/
+/**************************/
+.about-us-section {
+    padding-block: 4.7272em 5.818em;
+}
+
+.about-us-content {
+    @media (min-width: 57em) {
+        display: flex;
+        gap: 72px;
+        justify-content: center;
+    }
+}
+
+.about-us-imgs {
+    flex: 0 1 100%;
+    margin: 0 auto;
+    @media (min-width: 57em) {
+        margin: 0;
+    }
+}
+
+.about-us-text {
+    flex: 0 1 100%;
+    transform: translateY(40px);
+    max-width: 528px;
+    margin: 4rem auto;
+    
+    & > p { margin-block: 1.5rem 2rem; }
+
+    @media (min-width: 57em) {
+        margin: 0;
+    }
+}
+
+
+
+/**************************/
+/**     Contact Page     **/
+/**************************/
+.contact-section {
+    margin-block: 4rem 8rem;
+
+    & h1 { margin-bottom: 1.5rem; }
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.contact-block {
+    padding-top: 2.1818em;
+    flex: 0 1 55%;
+    padding-bottom: 2rem;
+
+    & > p { padding-block: 2rem; }
+}
+
+
+
+
+

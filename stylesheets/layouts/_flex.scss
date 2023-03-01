@@ -1,0 +1,6 @@
+.l-flex {
+    @media (min-width: 57em) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

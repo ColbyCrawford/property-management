@@ -1,0 +1,19 @@
+.img-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: fit-content;
+    gap: 40px;
+}
+
+.img-panel__img {
+    width: 100%;
+    max-width: 258px;
+    min-height: 288px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.img-panel__img:nth-child(1),
+.img-panel__img:nth-child(3) {
+    transform: translateY(80px);
+}

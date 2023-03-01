@@ -1,0 +1,12 @@
+.l-container {
+    --max-width: 82rem;
+    --padding: 2rem;
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+
+    @media (min-width: 57rem) {
+        --padding: 4rem;
+        width: min(var(--max-width), 100% - (var(--padding) * 2));
+    }
+
+}

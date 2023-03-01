@@ -1,0 +1,51 @@
+.theme-toggle {
+    /* Toggle Container */
+    display: block;
+    appearance: none;
+    position: relative;
+    min-width: 54px;
+    height: 24px;
+    border-radius: 25px;
+    border: 2px solid;
+    background-color: transparent;
+    transition: background-color .3s;
+    outline: none;
+    cursor: pointer;
+
+    /* Icons - Dark & Light */
+    &::before {
+        position: absolute;
+        top: 1px;
+        right: 5px;
+    }
+
+    &:checked::before {
+        left: 4px;
+    }   
+
+    /* Toggle Circle */
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        height: 16.5px;
+        width: 16.5px;
+        transition: left .3s;
+    }
+
+    &:checked::after {
+        left: 78%;
+    }
+    
+}
+
+.theme-toggle--default {
+    @extend .theme-toggle;
+}
+
+.theme-toggle--inverse {
+    @extend .theme-toggle;
+}

@@ -1,0 +1,29 @@
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    /* Flex Basis Styles */ 
+    & > :nth-child(1),
+    & > :nth-child(2) { flex: 1 1 40%; }
+
+    & > :nth-child(3),
+    & > textarea,
+    & > button { flex: 0 1 100%; }
+
+    /* Input & Textarea Styles */
+    input::placeholder,
+    textarea::placeholder {
+        font-family: var(--ff-body);
+        color: var(--clr-neutral-600);
+    }
+
+    input,
+    textarea {
+        border: 1px solid var(--clr-neutral-600);
+        background-color: transparent;
+        font-size: var(--fs-300);
+        border-radius: 0.3636em;
+        padding: 0.7222em 0 0.7222em 0.888em;
+    }
+}

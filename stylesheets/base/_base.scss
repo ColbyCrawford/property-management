@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    line-height: 1.636;
+    color: var(--clr-primary-400);
+    background-color: var(--clr-neutral-300);
+    overflow-x: hidden;
+}
+
+a { 
+    text-decoration: none;
+    color: unset;
+}
+
+ul, ol { list-style: none; }
+
+img { 
+    width: 100%; 
+    object-fit: cover;
+}
+
+button { 
+    border: none; 
+    cursor: pointer;
+}
+
+

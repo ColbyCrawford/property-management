@@ -1,0 +1,30 @@
+.page-header {
+    position: relative;
+    min-height: 30rem;
+
+    background-size: cover;
+    background-position: center center;
+    isolation: isolate;
+
+    &__text {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translateX(-50%);
+    }
+
+    &__text-inverse {
+        @extend .page-header__text;
+    }
+}
+
+.page-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 90%;
+    z-index: -1;
+}
+
+
+#about-header { background-image: url('/images/bg-about.jpeg'); }

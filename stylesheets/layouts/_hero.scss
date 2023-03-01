@@ -1,0 +1,45 @@
+#site-hero {
+    background-repeat: repeat-y, repeat-x, repeat-x;
+    background-position: left 29em top, 
+                         left top 6em,
+                         left top 25em;
+
+    @media (min-width: 57em) {
+        background-position: left 29em center, 
+                             left top 10em,
+                             left bottom 10em;
+    }
+    
+}
+
+.hero-content {
+    padding-block: 2.5rem;
+    @media (min-width: 57em) {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding-block: 2.54em 2em;
+    }
+}
+
+.hero__text {
+    margin-bottom: 4rem;
+    @media (min-width: 57em) {
+        flex: 0 1 55%;
+        // transform: translateY(-3em);
+    }
+}
+
+.hero__img {
+    @media (min-width: 57em) { 
+        flex: 1 1 50%;
+    }
+}
+
+.hero__text > .btn--primary {
+    margin-bottom: 1rem;
+}
+
+.hero__desc {
+    margin-block: 2rem 2.5rem;
+}

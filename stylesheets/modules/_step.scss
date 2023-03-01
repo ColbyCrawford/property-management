@@ -1,0 +1,43 @@
+.step {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.step__img {
+    background-color: var(--clr-neutral-400);
+    border-radius: 100rem;
+    width: 100%;
+    max-width: 192px;
+    min-height: 192px;
+    margin-inline: auto;
+    margin-block: 1rem 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.step:nth-child(1) img {
+    position: relative;
+    left: -6px;
+    top: 6px;
+    max-width: 148px;
+    max-height: 148px;
+}
+.step:nth-child(2) img {
+    position: relative;
+    top: -6px;
+    max-width: 148px;
+    max-height: 148px;
+}
+.step:nth-child(3) img {
+    max-width: 132px;
+    max-height: 132px;
+}
+
+.step__desc {
+    margin: 0 auto;
+    max-width: 22em;
+}
+
