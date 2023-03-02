@@ -791,7 +791,7 @@ body.light .theme-toggle--default {
   border-color: var(--clr-primary-400);
 }
 body.light .theme-toggle--default::before {
-  content: url("../images/sun.svg");
+  content: url("/images/sun.svg");
 }
 body.light .theme-toggle--default::after {
   background-color: var(--clr-primary-400);

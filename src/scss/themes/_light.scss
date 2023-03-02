@@ -2,7 +2,7 @@ body.light {
 
     .theme-toggle--default {
         border-color: var(--clr-primary-400);
-        &::before { content: url('../images/sun.svg'); }
+        &::before { content: url('/images/sun.svg'); }
         &::after { background-color: var(--clr-primary-400); }
     }
 
