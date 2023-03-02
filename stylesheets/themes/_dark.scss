@@ -4,9 +4,9 @@ body.dark {
 
     #site-hero {
         background-color: var(--clr-primary-400);
-        background-image: url('/images/vert-line--dark.svg'), 
-                          url('/images/horiz-line--dark.svg'),
-                          url('/images/horiz-line--dark.svg');
+        background-image: url('../../images/vert-line--dark.svg'), 
+                          url('../../images/horiz-line--dark.svg'),
+                          url('../../images/horiz-line--dark.svg');
     }
 
     .main-nav--inverse { color: var(--clr-primary-400); }
@@ -23,13 +23,13 @@ body.dark {
 
     .theme-toggle--default {
         &:checked { border-color: var(--clr-neutral-200); }
-        &:checked::before { content: url('/images/moon.svg'); }
+        &:checked::before { content: url('../../images/moon.svg'); }
         &:checked::after { background-color: var(--clr-neutral-200); }
     }
 
     .theme-toggle--inverse {
         border-color: var(--clr-primary-400);
-        &::before { content: url('/images/moon--inverse.svg'); }
+        &::before { content: url('../../images/moon--inverse.svg'); }
         &::after { background-color: var(--clr-primary-400); }
     }
 
@@ -38,7 +38,7 @@ body.dark {
     
     .checkmark-list {
         & > li::before {
-            content: url('/images/check-circle--dark.svg');
+            content: url('../../images/check-circle--dark.svg');
         }
     }
 
