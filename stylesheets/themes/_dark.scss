@@ -4,9 +4,9 @@ body.dark {
 
     #site-hero {
         background-color: var(--clr-primary-400);
-        background-image: url('../../images/vert-line--dark.svg'), 
-                          url('../../images/horiz-line--dark.svg'),
-                          url('../../images/horiz-line--dark.svg');
+        background-image: url('../images/vert-line--dark.svg'), 
+                          url('../images/horiz-line--dark.svg'),
+                          url('../images/horiz-line--dark.svg');
     }
 
     .main-nav--inverse { color: var(--clr-primary-400); }
