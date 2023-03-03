@@ -80,7 +80,6 @@
 /* TESTIMONIALS SECTION */
 .testimonials-section {
     margin-block: 5rem 12rem;
-    
 }
 
 .testimonials-container {
@@ -132,9 +131,13 @@
 
 }
 
+
+
+
 /**************************/
 /**      About Page      **/
 /**************************/
+
 .about-us-section {
     padding-block: 4.7272em 5.818em;
 }
@@ -171,8 +174,18 @@
 
 
 /**************************/
+/**     Services Page    **/
+/**************************/
+
+#services-block {
+    padding-block: 4em;
+}
+
+
+/**************************/
 /**     Contact Page     **/
 /**************************/
+
 .contact-section {
     margin-block: 4rem 8rem;
 
@@ -182,17 +195,15 @@
 .contact-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 4rem;
+    flex-wrap: wrap;
+
+    @media (min-width: 65em) {
+        flex-wrap: nowrap;
+    }
 }
 
-.contact-block {
-    padding-top: 2.1818em;
-    flex: 0 1 55%;
-    padding-bottom: 2rem;
 
-    & > p { padding-block: 2rem; }
-}
 
 
 

@@ -24,13 +24,17 @@ a {
 ul, ol { list-style: none; }
 
 img { 
-    width: 100%; 
+    max-width: 100%;
     object-fit: cover;
 }
 
 button { 
     border: none; 
     cursor: pointer;
+}
+
+textarea {
+    resize: none;
 }
 
 

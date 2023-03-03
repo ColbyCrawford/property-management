@@ -13,44 +13,44 @@
 
 <body class="light">
 
-    <header id="contact-header" class="page-header">
+    <header>
         <div class="l-container">
             <nav class="main-nav">
                 <div>
-                    <img class="logo" src="../images/logo--light.svg" alt="home">
+                    <a href="/index.html"><img class="logo" src="../images/logo--light.svg" alt="home"></a>
                     <input type="checkbox" class="theme-toggle theme-toggle--default">
                 </div>
                 <ul class="main-nav__links">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html" class="btn--primary">Get in touch</a></li>
                 </ul>
                 <button class="menu-toggle">
                     <i class="fa-solid fa-bars fa-2x"></i>
                 </button>
             </nav>
-            <h1 class="page-header__text | heading-xl text-primary-inverse">Get in touch</h1>
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1ekEr2REmkH7mU2eVVMNnMmN4mWo&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
         </div>
     </header>
+  
     <main id="contact-main">
         <section class="contact-section">
             <div class="l-container">
                 <div class="contact-wrapper">
                     <div class="contact-block">
-                        <h2>Send us a message</h2>
+                        <h2 class="contact-block__title">Send us a message</h2>
                         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         <form class="contact-form" action="">
                             <input type="text" placeholder="First Name">
                             <input type="email" placeholder="Email">
                             <input type="text" placeholder="Topic">
                             <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
-                            <button class="btn--primary">SEND</button>
+                            <button class="form__btn | btn--primary">SEND</button>
                         </form>
                     </div>
                     <div class="contact-panel">
-                        <h2>Contact Information</h2>
+                        <h2 class="contact-panel__title">Contact Information</h2>
                         <p class="contact-phone">+1 (858) 922 2186</p>
                         <p class="contact-email">email@business.com</p>
                         <p class="contact-location | text-underline">13307 Pacer Ln, Poway, CA 92064</p>

@@ -1,0 +1,9 @@
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    &__body {
+        max-width: 80%;
+        margin: 1rem auto 0;
+    }
+}

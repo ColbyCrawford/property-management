@@ -4,6 +4,7 @@
 
 @import
 'layouts/flex',
+'layouts/grid',
 'layouts/container',
 'layouts/navigation',
 'layouts/hero',
@@ -22,7 +23,12 @@
 'modules/socials',
 'modules/contact-form',
 'modules/contact-panel',
-'modules/img-panel';
+'modules/contact-block',
+'modules/img-panel',
+'modules/card',
+'modules/section-header',
+'modules/bg-transition',
+'modules/map';
 
 @import 
 'themes/light',

@@ -1,15 +1,26 @@
 body.dark {
     color: var(--clr-neutral-200);
-    background-color: var(--clr-neutral-800);
+    // background-color: var(--clr-primary-800);
+    background: linear-gradient(var(--clr-primary-800) 50%, rgb(23, 23, 24) 70%);
 
     #site-hero {
         background-color: var(--clr-primary-400);
-        background-image: url('/images/vert-line--dark.svg'), 
-                          url('/images/horiz-line--dark.svg'),
-                          url('/images/horiz-line--dark.svg');
+        background-image: url('/images/vert-line--dark.svg'),
+            url('/images/horiz-line--dark.svg'),
+            url('/images/horiz-line--dark.svg');
     }
 
-    .main-nav--inverse { color: var(--clr-primary-400); }
+    .site-footer {
+        background-color: var(--clr-primary-400);
+    }
+
+    .main-nav--inverse {
+        color: var(--clr-primary-400);
+    }
+
+    .main-nav .btn--primary {
+        background-color: var(--clr-accent-400);
+    }
 
     .btn--primary {
         background-color: var(--clr-neutral-200);
@@ -22,27 +33,45 @@ body.dark {
     }
 
     .theme-toggle--default {
-        &:checked { border-color: var(--clr-neutral-200); }
-        &:checked::before { content: url('/images/moon.svg'); }
-        &:checked::after { background-color: var(--clr-neutral-200); }
+        &:checked {
+            border-color: var(--clr-neutral-200);
+        }
+
+        &:checked::before {
+            content: url('/images/moon.svg');
+        }
+
+        &:checked::after {
+            background-color: var(--clr-neutral-200);
+        }
     }
 
     .theme-toggle--inverse {
         border-color: var(--clr-primary-400);
-        &::before { content: url('/images/moon--inverse.svg'); }
-        &::after { background-color: var(--clr-primary-400); }
+
+        &::before {
+            content: url('/images/moon--inverse.svg');
+        }
+
+        &::after {
+            background-color: var(--clr-primary-400);
+        }
     }
 
 
-    .fa-bars { color: var(--clr-neutral-200); }
-    
+    .fa-bars {
+        color: var(--clr-neutral-200);
+    }
+
     .checkmark-list {
-        & > li::before {
+        &>li::before {
             content: url('/images/check-circle--dark.svg');
         }
     }
 
-    .text-block__svg { color: var(--clr-neutral-600); }
+    .text-block__svg {
+        color: var(--clr-neutral-600);
+    }
 
     .testimonial {
         background-color: var(--clr-neutral-600);
@@ -50,8 +79,59 @@ body.dark {
         box-shadow: 0px 8px 23px rgba(174, 176, 179, 0.23);
     }
 
-    .page-header::after { background-color: var(--clr-neutral-200); }
-    #contact-header::after { background-color: var(--clr-primary-400); }
+    .card {
+        background-color: var(--clr-neutral-500);
+        box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.2);
+        color: var(--clr-primary-400);
+
+        &__svg {
+            color: var(--clr-primary-400);
+        }
+
+        &__btn {
+            background-color: var(--clr-accent-400);
+            color: var(--clr-neutral-200);
+        }
+
+        &__title {
+            color: var(--clr-primary-400);
+        }
+    }
+
+    .page-header::after {
+        background-color: var(--clr-neutral-200);
+    }
+
+    #contact-header::after {
+        background-color: var(--clr-primary-400);
+    }
+
+    .page-header__text-inverse {
+        color: var(--clr-primary-400);
+    }
+
+    .contact-panel {
+        color: var(--clr-primary-400);
+    }
+
+    .contact-block__title,
+    .contact-panel__title {
+        color: var(--clr-accent-400);
+    }
    
-    .page-header__text-inverse { color: var(--clr-primary-400); }
+
+    /* Input & Textarea Styles */
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--clr-neutral-200);
+        opacity: 0.8;
+    }
+
+    input,
+    textarea {
+        border: 1px solid var(--clr-neutral-200);
+        color: var(--clr-neutral-200);
+    }
+
+
 }

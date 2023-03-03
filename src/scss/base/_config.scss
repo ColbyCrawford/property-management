@@ -4,17 +4,18 @@
 
     --clr-primary-400: hsl(210, 19%, 27%);
     --clr-primary-600: hsl(210, 23%, 18%);
+    --clr-primary-800: hsl(208, 41%, 8%);
 
     --clr-accent-400: hsl(198, 72%, 52%);
-    --clr-accent-600: hsl(198, 68%, 25%); // Darkmode Only
+    --clr-accent-600: hsl(198, 68%, 25%); // Darkmode Color
 
     --clr-neutral-200: #F8F9F9;
     --clr-neutral-300: #F2F3F3;
     --clr-neutral-400: #DDE0E2;
     --clr-neutral-500: #BAC0C5;
-    --clr-neutral-600: #4A4F4F; // Darkmode Only
-    --clr-neutral-700: #181919; // Darkmode Only
-    --clr-neutral-800: #121313; // Darkmode Only
+    --clr-neutral-600: #4A4F4F; // Darkmode Color
+    --clr-neutral-700: #181919; // Darkmode Color
+    --clr-neutral-800: #121313; // Darkmode Color
 
     --ff-primary: 'roboto', sans-serif;
     --ff-body: var(--ff-primary);
@@ -71,6 +72,6 @@
 
 .m-bottom-600 { margin-bottom: var(--size-600); }
 
-.text-underline {
-    text-decoration: underline;
-}
+.text-underline { text-decoration: underline; }
+
+.text-align-center { text-align: center; }

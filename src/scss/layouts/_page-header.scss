@@ -22,9 +22,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 90%;
+    opacity: 0.5;
     z-index: -1;
 }
 
 
 #about-header { background-image: url('/images/bg-about.jpeg'); }
+#services-header { background-image: url('/images/bg-services.jpg'); }
