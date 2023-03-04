@@ -16,10 +16,36 @@ body.light {
         }
     }
 
-    .main-nav { color: var(--clr-primary-400); }
-    .main-nav--inverse { color: var(--clr-neutral-200); }
+    .main-nav { 
+        color: var(--clr-primary-400); 
+        @media (max-width: 57em) {
+            .main-nav__links {
+                background-color: var(--clr-neutral-200);
+            }
+            .menu-toggle__icon { 
+                color: var(--clr-primary-400); 
+            }
+        }
+        
+    }
+    .main-nav--inverse { 
+        color: var(--clr-neutral-200); 
+        
+        @media (max-width: 57em) {
+            .main-nav__links {
+                color: var(--clr-primary-400);
+            }
+            .menu-toggle__icon { 
+                color: var(--clr-neutral-200); 
+            }
+            .btn--primary-inverse {
+                background-color: var(--clr-primary-400);
+                color: var(--clr-neutral-200);
+            }
+        }
+    }
 
-    .fa-bars { color: var(--clr-primary-400); }
+    
 
     #site-hero {
     background-color: var(--clr-neutral-200);

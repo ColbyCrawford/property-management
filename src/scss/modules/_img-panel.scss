@@ -16,4 +16,5 @@
 .img-panel__img:nth-child(1),
 .img-panel__img:nth-child(3) {
     transform: translateY(80px);
+    z-index: -1;
 }

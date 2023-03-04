@@ -2,6 +2,8 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
+    z-index: 200;
 
     @media (min-width: 57em) {
         display: none;

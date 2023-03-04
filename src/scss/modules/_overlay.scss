@@ -1,0 +1,14 @@
+#overlay {
+    @media (max-width: 57em) {
+        position: absolute;
+        inset: 0;
+        min-height: 100vh;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.324);
+        display: none;
+
+        &[data-visible] {
+            display: block;
+        }
+    }
+}

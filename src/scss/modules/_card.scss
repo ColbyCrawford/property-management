@@ -1,5 +1,6 @@
 .card {
     position: relative;
+    z-index: -1;
     isolation: isolate;
     padding: 2em;
     border-radius: .363636em;
